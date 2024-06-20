@@ -1,0 +1,18 @@
+﻿{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "keyVaultName": {
+            "value": "kv-wgrest-westus-rgdev"
+        },
+        "frontDoorName": {
+            "value": "pkgmgr-wgrest-rgdev"
+        },
+        "appConfigPrimary": {
+            "value": "appconfig-wgrest-westus-rgdev"
+        },
+        "appConfigSecondary": {
+            "value": "appconfig-wgrest-westus-rgdev"
+        }
+    }
+}

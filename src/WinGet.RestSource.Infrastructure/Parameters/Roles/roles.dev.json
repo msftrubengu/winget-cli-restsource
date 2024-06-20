@@ -1,0 +1,35 @@
+{
+    "storageAccounts": [
+        {
+            "description": "This is the storage account for the west azure function",
+            "name": "stwgrestwestusrgdev",
+            "servicePrincipals": [
+                {
+                    "displayName": "azfun-wgrest-api-westus-rgdev",
+                    "roles": [
+                        "Storage Account Contributor",
+                        "Storage Blob Data Owner",
+                        "Storage Table Data Contributor",
+                        "Storage Queue Data Contributor",
+                        "Storage Queue Data Message Sender",
+                        "Storage Queue Data Message Processor"
+                    ]
+                }
+            ]
+        }
+    ],
+    "appConfigs": [
+        {
+            "description": "This is the primary app config.",
+            "name": "appconfig-wgrest-westus-rgdev",
+            "servicePrincipals": [
+                {
+                    "displayName": "azfun-wgrest-api-westus-rgdev",
+                    "roles": [
+                        "App Configuration Data Reader"
+                    ]
+                }
+            ]
+        }
+    ]
+}

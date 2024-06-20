@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westus"
+    },
+    "serverIdentifier": {
+      "value": "winget-pkgs-intune-rest-rgdev"
+    },
+    "manifestCacheEndpoint": {
+      "value": "https://stpkgmancchawestusrgdev.blob.core.windows.net/cache/"
+    },
+    "cosmosContainer": {
+      "value": "Manifests"
+    },
+    "cosmosDatabase": {
+      "value": "cosmossql-wgrest-rgdev"
+    },
+    "functionName": {
+      "value": "azfun-wgrest-api-westus-rgdev"
+    },
+    "storageSecretName": {
+      "value": "stwgrestwestusrgdevConnectionString"
+    },
+    "appServiceName": {
+      "value": "asp-wgrest-westus-rgdev"
+    },
+    "keyVaultName": {
+      "value": "kv-wgrest-westus-rgdev"
+    },
+    "appInsightName": {
+      "value": "appin-wgrest-westus-rgdev"
+    },
+    "monitoringTenant": {
+      "value": "PkgMgrInt"
+    },
+    "monitoringRole": {
+      "value": "azfun-wgrest-api-westus-rgdev"
+    },
+    "monitoringMetricsAccount": {
+      "value": "MsPkgMgrMetrics"
+    },
+    "cors": {
+      "value": {
+        "allowedOrigins": [
+          "https://functions.azure.com",
+          "https://functions-staging.azure.com",
+          "https://functions-next.azure.com",
+          "https://df-devicemanagement.onecloud.azure-test.net"
+        ],
+        "supportCredentials": false
+      }
+    },
+    "azFuncStorageName": {
+      "value": "stwgrestwestusrgdev"
+    }
+  }
+}
